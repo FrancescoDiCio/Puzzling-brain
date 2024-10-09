@@ -33,6 +33,19 @@
         .section {
             margin-top: 40px;
         }
+        .image-row {
+            display: flex;
+            justify-content: space-around; /* Aligns images with space between them */
+            margin-top: 20px;
+        }
+        .image-row img {
+            max-width: 45%; /* Adjust this value to control image width */
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +65,7 @@
         <h2><strong>Experiment snapshot</strong></h2>
         <p>This is a snapshot from my experiment</p>
         <div class="image-container">
-            <img src="https://raw.githubusercontent.com/FrancescoDiCio/Puzzling_brain/refs/heads/main/vlcsnap-2024-09-14-17h37m56s239.jpg?token=GHSAT0AAAAAACYV3OFNDCIOKP4CYLYGWXNKZYGPY3A" alt="Placeholder Image" style="width: 700px;">
+            <img src="images/vlcsnap-2024-09-14-17h37m56s239.jpg" alt="Experiment snapshot" style="width: 700px;">
         </div>
     </div>
     
@@ -62,11 +75,15 @@
         <p>These types of hairstyles can interfere with the fNIRS system.</p>
         <p><strong>Hair Extension</strong></p>
         <div class="image-container">
-            <img src="hair_extension.jpg" alt="Hair Extension" style="width: 700px;">
+            <img src="images/hair_extension.jpg" alt="Hair Extension" style="width: 700px;">
         </div>
         <p><strong>Permanent Braid</strong></p>
         <div class="image-container">
-            <img src="https://raw.githubusercontent.com/FrancescoDiCio/Puzzling_brain/refs/heads/main/braid_hair.jpg?token=GHSAT0AAAAAACYV3OFMTFCS2DGQCDXNZNEOZYGPYTA" alt="Permanent Braid" style="width: 700px;">
+            <img src="images/braid_hair.jpg" alt="Permanent Braid" style="width: 700px;">
+        </div>
+        <p><strong>Dreadlocks</strong></p>
+        <div class="image-container">
+            <img src="images/dreadlocks.jpg" alt="Permanent Braid" style="width: 700px;">
         </div>
     </div>
 
@@ -74,8 +91,10 @@
     <div class="section">
         <h2>Headcovering Items</h2>
         <p>Here are some examples of headcovering items that may affect fNIRS readings.</p>
-        <div class="image-container">
-            <img src="headcovering-example.jpg" alt="Headcovering Items for fNIRS">
+        <div class="image-row">
+            <!-- Head scarf -->
+            <img src="images/head_covering_scarf.jpg" alt="Braid Hairstyle">
+            <img src="images/turban_wrap.jpg" alt="Hair Extension">
         </div>
     </div>
 
