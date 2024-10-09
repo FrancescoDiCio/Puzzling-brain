@@ -33,14 +33,30 @@
         .section {
             margin-top: 40px;
         }
-        .image-row {
+         /* Flexbox for two images side by side in the experiment snapshot */
+         .flex-row {
             display: flex;
-            justify-content: space-around; /* Aligns images with space between them */
+            justify-content: space-around;
             margin-top: 20px;
         }
-        .image-row img {
-            max-width: 45%; /* Adjust this value to control image width */
+        .flex-row img {
+            max-width: 45%; /* Adjusts to fit side by side */
             height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: white;
+        }
+        /* CSS Grid for mosaics */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Automatically adjusts column number */
+            gap: 10px; /* Space between images */
+            margin-top: 20px;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto; /* Ensures images maintain aspect ratio */
             border: 2px solid #ddd;
             border-radius: 8px;
             padding: 5px;
@@ -53,48 +69,54 @@
     <h1>Puzzling Brain</h1>
     <p>
         <strong>Welcome</strong> to the "Puzzling Brain" experiment guide.
-        Below there is a picture of what the experiment looks like so you can see how an fNIRS works! 
+        Below there is a photo of what the experiment looks like and a photo that shows the fNIRS system we use!
         After that, there are some pictures showing the types of hairstyles and head coverings that are incompatible with the fNIRS system
         (if you have one of those, you cannot take part in the experiment).
         If you have any questions, please contact me at this email: 
         <a href="mailto:francesco.cio'.20@ucl.ac.uk">francesco.cio'.20@ucl.ac.uk</a>
     </p>
 
-    <!-- Section 1: Experiment snapshot -->
-    <div class="section">
-        <h2><strong>Experiment snapshot</strong></h2>
-        <p>This is a snapshot from my experiment</p>
-        <div class="image-container">
-            <img src="images/vlcsnap-2024-09-14-17h37m56s239.jpg" alt="Experiment snapshot" style="width: 700px;">
-        </div>
-    </div>
-    
-    <!-- Section 2: Incompatible Hairstyles -->
-    <div class="section">
-        <h2>Hairstyles Incompatible with fNIRS</h2>
-        <p>These types of hairstyles can interfere with the fNIRS system.</p>
-        <p><strong>Hair Extension</strong></p>
-        <div class="image-container">
-            <img src="images/hair_extension.jpg" alt="Hair Extension" style="width: 700px;">
-        </div>
-        <p><strong>Permanent Braid</strong></p>
-        <div class="image-container">
-            <img src="images/braid_hair.jpg" alt="Permanent Braid" style="width: 700px;">
-        </div>
-        <p><strong>Dreadlocks</strong></p>
-        <div class="image-container">
-            <img src="images/dreadlocks.jpg" alt="Permanent Braid" style="width: 700px;">
+     <!-- Section 1: Experiment Snapshot -->
+     <div class="section">
+        <h2><strong>Experiment Snapshot</strong></h2>
+        <p>This is a snapshot from my experiment and the fNIRS system</p>
+        <div class="flex-row">
+            <!-- Two images side by side -->
+            <img src="images/vlcsnap-2024-09-14-17h37m56s239.jpg" alt="Experiment snapshot 1">
+            <img src="images/snapshot1.jpg" alt="Experiment snapshot 2">
         </div>
     </div>
 
-    <!-- Section 3: Headcovering Items -->
+    <!-- Section 2: Incompatible Hairstyle/Head Covering -->
     <div class="section">
-        <h2>Headcovering Items</h2>
-        <p>Here are some examples of headcovering items that may affect fNIRS readings.</p>
-        <div class="image-row">
-            <!-- Head scarf -->
-            <img src="images/head_covering_scarf.jpg" alt="Braid Hairstyle">
-            <img src="images/turban_wrap.jpg" alt="Hair Extension">
+        <h2><strong>Incompatible Hairstyle/Head Covering</strong></h2>
+        <p>These are examples of hairstyles and head coverings that interfere with the fNIRS system.</p>
+        <div class="grid-container">
+            <!-- Mosaic of images -->
+            <img src="images/hair_ext1.jpg" alt="Incompatible hairstyle 1">
+            <img src="images/hair_ext2.jpg" alt="Incompatible hairstyle 2">
+            <img src="images/permanent_braids1.jpg" alt="Incompatible hairstyle 3">
+            <img src="images/permanent_braids2.jpeg" alt="Incompatible hairstyle 4">
+            <img src="images/dreadlocks1.jpg" alt="Incompatible hairstyle 5">
+            <img src="images/dreadlocks2.jpg" alt="Incompatible hairstyle 6">
+            <img src="images/head_covering_scarf1.jpg" alt="Incompatible hairstyle 7">
+            <img src="images/head_covering_scarf2.jpg" alt="Incompatible hairstyle 8">
+        </div>
+    </div>
+
+    <!-- Section 3: Compatible Hairstyle -->
+    <div class="section">
+        <h2><strong>Compatible Hairstyle</strong></h2>
+        <p>These are hairstyles that are compatible with the fNIRS system.</p>
+        <div class="grid-container">
+            <!-- Mosaic of images -->
+            <img src="images/hairOkfnirs1.jpg" alt="Compatible hairstyle 1">
+            <img src="images/hairOkfnirs3.jpg" alt="Compatible hairstyle 2">
+            <img src="images/hairOkfnirs4.jpg" alt="Compatible hairstyle 3">
+            <img src="images/hairOkfnirs5.jpg" alt="Compatible hairstyle 4">
+            <img src="images/hairOkfnirs6.jpg" alt="Compatible hairstyle 5">
+            <img src="images/hairOkfnirs7.jpg" alt="Compatible hairstyle 6">
+            <img src="images/hairOkfnirs8.jpg" alt="Compatible hairstyle 7">
         </div>
     </div>
 
