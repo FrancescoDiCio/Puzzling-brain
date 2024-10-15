@@ -7,15 +7,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            font-size: 20px; /* Increased font size */
+            font-size: 28px; 
             margin: 20px;
             background-color: #f4f4f4;
         }
-        h1, h2 {
+        h1 {
+            font-size: 48px;
             color: #333;
+
+        }
+        h2 {
+            color: #456;
+            font-size: 36px;
         }
         p {
-            font-size: 18px;
+            font-size: 28px;
             color: #555;
         }
         .image-container {
@@ -31,7 +37,25 @@
             background-color: white;
         }
         .section {
-            margin-top: 40px;
+            /* Adds more space between sections */
+            margin-top: 50px;
+            margin-bottom: 50px; 
+        }
+        /* Flexbox for two images side by side in the experiment snapshot */
+        .snapshot-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .snapshot-row img {
+            max-width: 80%; /* Full width for the snapshot images */
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: white;
+            margin: 10px;
         }
          /* Flexbox for two images side by side in the experiment snapshot */
          .flex-row {
@@ -46,6 +70,7 @@
             border-radius: 8px;
             padding: 5px;
             background-color: white;
+            margin: 10px;
         }
         /* CSS Grid for mosaics */
         .grid-container {
@@ -61,6 +86,7 @@
             border-radius: 8px;
             padding: 5px;
             background-color: white;
+            margin: 10px;
         }
     </style>
 </head>
@@ -68,29 +94,38 @@
 
     <h1>Puzzling Brain</h1>
     <p>
-        <strong>Welcome</strong> to the "Puzzling Brain" experiment guide.
-        Below there is a photo of what the experiment looks like and a photo that shows the fNIRS system we use!
-        After that, there are some pictures showing the types of hairstyles and head coverings that are incompatible with the fNIRS system
-        (if you have one of those, you cannot take part in the experiment).
-        If you have any questions, please contact me at this email: 
+        <strong>Welcome</strong> to the <em>Puzzling Brain</em> experiment! <p></p>
+        Curious to see how the study works? Below, you'll find a snapshot of our setup and the fNIRS system we use to explore brain activity in real time. <p></p>
+        We've also included examples of hairstyles and head coverings that may interfere with our equipment.
+        Please check if your hairstyle or headwear falls into any of these categories, as it may affect your eligibility to participate.<p></p>
+        For any questions, feel free to reach out at: 
         <a href="mailto:francesco.cio'.20@ucl.ac.uk">francesco.cio'.20@ucl.ac.uk</a>
     </p>
 
      <!-- Section 1: Experiment Snapshot -->
      <div class="section">
-        <h2><strong>Experiment Snapshot</strong></h2>
-        <p>This is a snapshot from my experiment and the fNIRS system</p>
+        <h2><strong>Experiment Snapshot and fNIRS system</strong></h2>
+        <p>This is a snapshot from my experiment</p>
+        <div class="snapshot-row img">
+            <!-- Single image -->
+            <img src="images/vlcsnap-2024-09-14-17h37m56s239.jpg" alt="Experiment snapshot 1">
+        </div>
+        <p>This is fNIRS system used in this experiment</p>
         <div class="flex-row">
             <!-- Two images side by side -->
-            <img src="images/vlcsnap-2024-09-14-17h37m56s239.jpg" alt="Experiment snapshot 1">
-            <img src="images/snapshot1.jpg" alt="Experiment snapshot 2">
+            <img src="images/snapshot1.jpg" alt="Experiment snapshot 1">
+            <img src="images/Cap_lab.jpg" alt="Experiment snapshot 2">
         </div>
     </div>
 
     <!-- Section 2: Incompatible Hairstyle/Head Covering -->
     <div class="section">
         <h2><strong>Incompatible Hairstyle/Head Covering</strong></h2>
-        <p>These are examples of hairstyles and head coverings that interfere with the fNIRS system.</p>
+        <p>Here are some examples of hairstyles and head coverings that can interfere with the fNIRS system.
+            Since the cap needs to fit closely to your head for accurate readings, certain hairstyles, like extensions or braids, might make this difficult.
+            If your hairstyle falls into one of these categories, unfortunately you cannot take part to the study.
+            If you wear any head covering items, as long as you can remove them during the experiment, you can take part in our study!
+        </p>
         <div class="grid-container">
             <!-- Mosaic of images -->
             <img src="images/hair_ext1.jpg" alt="Incompatible hairstyle 1">
@@ -117,6 +152,29 @@
             <img src="images/hairOkfnirs6.jpg" alt="Compatible hairstyle 5">
             <img src="images/hairOkfnirs7.jpg" alt="Compatible hairstyle 6">
             <img src="images/hairOkfnirs8.jpg" alt="Compatible hairstyle 7">
+            <img src="images/hairOkfnirs9.jpg" alt="Compatible hairstyle 8">
+            <img src="images/hairOkfnirs10.jpg" alt="Compatible hairstyle 9">
+        </div>
+    </div>
+
+    <!-- Section 4: Other equipment you will wear -->
+    <div class="section">
+        <h2><strong>Other Equipment</strong></h2>
+        <p>Following there are images of the other equipment you will wear during the experiment.</p>
+        <p><strong>Eye-tracker</strong></p>
+        <div class="flex-row">
+            <!-- Two images side by side -->
+            <img src="images/Neon_front.jpg" alt="Eye-tracker front 1">
+            <img src="images/Neon_front.jpg" alt="Eye-tracker side 1">
+        </div>
+        <div class="flex-row">
+            <!-- Two row Invisible-->
+            <img src="images/Invisible_front.jpg" alt="Eye-tracker front 2">
+            <img src="images/Invisible_side.jpg" alt="Eye-tracker side 2">
+        </div>
+        <p><strong>Breathing Belt</strong></p>
+        <div class="flex-row"></div>
+            <img src="images/Breathing_belt.jpg" alt="Breathing Belt">
         </div>
     </div>
 
