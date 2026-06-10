@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puzzling Brain Experiment</title>
     <style>
+         /* Tab container styling */
+         .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        
+        /* Tab buttons */
+        .tab-button {
+            background-color: #ddd;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+
+        .tab-button.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Tab content */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* General page styling */
         body {
             font-family: Arial, sans-serif;
             font-size: 28px; 
@@ -92,14 +127,23 @@
 </head>
 <body>
 
-    <h1>Puzzling Brain</h1>
+    <h1>Connect the Clue</h1>
     <p>
-        <strong>Welcome</strong> to the <em>Puzzling Brain</em> experiment! <p></p>
+        <strong>Welcome</strong> to the <em>Connect the clue</em> experiment! <p></p>
+        Explore the fascinating interplay among eye movements, hand signals, and body responses as we dive into brain
+        activity during team clue-guessing. This exciting journey will give us a fresh peek into real-time
+        social interactions as you attempt to solve tasks!<p></p>
+        For any questions, feel free to reach out to: 
+        <a href="mailto:devanshi.agarwal.25@ucl.ac.uk">devanshi.agarwal.25@ucl.ac.uk</a> or <a href="mailto:francesco.cio'.20@ucl.ac.uk">francesco.cio'.20@ucl.ac.uk</a> 
+    </p>
+
+    <p>
+        <strong>\Our </strong> study <em>blends neuroscience</em> with social games! <p></p>
         Curious to see how the study works? Below, you'll find a snapshot of our setup and the fNIRS system we use to explore brain activity in real time. <p></p>
         We've also included examples of hairstyles and head coverings that may interfere with our equipment.
         Please check if your hairstyle or headwear falls into any of these categories, as it may affect your eligibility to participate.<p></p>
-        For any questions, feel free to reach out at: 
-        <a href="mailto:francesco.cio'.20@ucl.ac.uk">francesco.cio'.20@ucl.ac.uk</a>
+        For any questions, feel free to reach out to: 
+        <a href="mailto:devanshi.agarwal.25@ucl.ac.uk">devanshi.agarwal.25@ucl.ac.uk</a> or <a href="mailto:francesco.cio'.20@ucl.ac.uk">francesco.cio'.20@ucl.ac.uk</a> 
     </p>
 
     <p>
@@ -114,16 +158,16 @@
      <!-- Section 1: Experiment Snapshot -->
      <div class="section">
         <h2><strong>Experiment Snapshot and fNIRS system</strong></h2>
-        <p>This is a snapshot from my experiment</p>
+        <p>This is a snapshot from the experiment</p>
         <div class="snapshot-row img">
             <!-- Single image -->
-            <img src="images/vlcsnap-2024-09-14-17h37m56s239.jpg" alt="Experiment snapshot 1">
+            <img src="images/vlcsnap-2026-06-10-18h21m06s438.png" alt="Experiment snapshot 1">
         </div>
         <p>This is fNIRS system used in this experiment</p>
         <div class="flex-row">
             <!-- Two images side by side -->
-            <img src="images/snapshot1.jpg" alt="Experiment snapshot 1">
-            <img src="images/Cap_lab.jpg" alt="Experiment snapshot 2">
+            <img src="images/Brite_artenis.png" alt="Experiment snapshot 1">
+            <img src="images/fNIRS_cap.png" alt="Experiment snapshot 2">
         </div>
     </div>
 
@@ -132,7 +176,7 @@
         <h2><strong>Incompatible Hairstyle/Head Covering</strong></h2>
         <p>Here are some examples of hairstyles and head coverings that can interfere with the fNIRS system.
             Since the cap needs to fit closely to your head for accurate readings, certain hairstyles, like extensions or braids, might make this difficult.
-            If your hairstyle falls into one of these categories, unfortunately you cannot take part to the study.
+            If your hairstyle falls into one of these categories, unfortunately you cannot take part in the study.
             If you wear any head covering items, as long as you can remove them during the experiment, you can take part in our study!
         </p>
         <div class="grid-container">
@@ -178,8 +222,8 @@
         </div>
         <div class="flex-row">
             <!-- Two row Invisible-->
-            <img src="images/Invisible_front.jpg" alt="Eye-tracker front 2">
-            <img src="images/Invisible_side.jpg" alt="Eye-tracker side 2">
+            <img src="images/eye-tracker_front2.png" alt="Eye-tracker front 2">
+            <img src="images/eye-tracker_side2.png" alt="Eye-tracker side 2">
         </div>
         <p><strong>Breathing Belt</strong></p>
         <div class="flex-row"></div>
